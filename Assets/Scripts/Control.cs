@@ -8,15 +8,14 @@ public class Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vec = transform.localPosition;  
-        Vec.y += Input.GetAxis("Vertical") * Time.deltaTime * 20;  
-        Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * 20;  
+        Vec = transform.localPosition;
+        Vec.y += Input.GetAxis("Vertical") * Time.deltaTime * 20;
+        Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * 20;
         transform.localPosition = Vec;
     }
 }
